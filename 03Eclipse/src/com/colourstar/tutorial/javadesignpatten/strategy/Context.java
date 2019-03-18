@@ -21,5 +21,4 @@ public class Context
 		
 		System.out.println(kInst.ExecuteStrategy(1, 2));
 	}
-	
 }
