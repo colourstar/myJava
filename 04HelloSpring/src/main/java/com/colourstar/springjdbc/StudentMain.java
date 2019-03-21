@@ -13,9 +13,9 @@ public class StudentMain
 		kStudent.m_iAge = 29;
 		kStudent.m_iID = 2;
 		kStudent.m_kName = "color";
-		kImp.InsertStudent(kStudent);
+//		kImp.InsertStudent(kStudent);
 		
-		Student kStudent1 = kImp.GetStudent(1);
+		Student kStudent1 = kImp.GetStudent(2);
 		System.out.println(kStudent1.m_iID);
 		System.out.println(kStudent1.m_iAge);
 		System.out.println(kStudent1.m_kName);
