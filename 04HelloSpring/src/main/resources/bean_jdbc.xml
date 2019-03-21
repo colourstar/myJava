@@ -11,7 +11,7 @@
 		<property name="password" value="colourstar870209" />
 	</bean>
 	
-	<bean id="customerDAO" class="com.colourstar.springjdbc.StudentDAOImp">
+	<bean id="customerDAO" class="com.colourstar.springjdbc.StudentDAOTemplateImp">
 		<property name="data" ref="dataSource" />
 	</bean>
 

@@ -8,12 +8,12 @@ public class StudentMain
 	public static void main(String[] args)
 	{
 		ApplicationContext context = new ClassPathXmlApplicationContext("bean_jdbc.xml");
-		StudentDAOImp kImp = (StudentDAOImp)context.getBean("customerDAO");
+		StudentDAOTemplateImp kImp = (StudentDAOTemplateImp)context.getBean("customerDAO");
 		Student kStudent = new Student();
 		kStudent.m_iAge = 29;
 		kStudent.m_iID = 2;
 		kStudent.m_kName = "color";
-//		kImp.InsertStudent(kStudent);
+		kImp.InsertStudent(kStudent);
 		
 		Student kStudent1 = kImp.GetStudent(2);
 		System.out.println(kStudent1.m_iID);
